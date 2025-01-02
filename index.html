@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Sameed</a>
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="#" >Services</a>
+            <a href="#" >Skills</a>
+            <a href="#" >Education</a>
+            <a href="#" >Experience</a>
+            <a href="#" >Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="image.png" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Sameed</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Agency-level web development services at freelancer rates</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <h2 style="font-size: 22px;">Services</h2>
+        <div class="service-card">
+            <h3>Web Development</h3>
+            <p>Creating responsive and dynamic websites.</p>
+        </div>
+        <div class="service-card">
+            <h3>UI/UX Design</h3>
+            <p>Designing user-friendly interfaces.</p>
+        </div>
+        <div class="service-card">
+            <h3>SEO Optimization</h3>
+            <p>Boosting your website visibility.</p>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <h2 style="font-size: 23px;">Skills</h2>
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <p>Proficient in creating structured web pages.</p>
+        </div>
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <p>Skilled in styling and designing responsive layouts.</p>
+        </div>
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Experienced in making websites interactive and dynamic.</p>
+        </div>
+    </section>
+    <section class="education">
+        <h2>Education</h2>
+        <div class="education-card">
+            <h3>Frontend</h3>
+            <p>Gulshan College</p>
+            <p>2nd Year</p>
+        </div>
+        <!-- <div class="education-card">
+            <h3>HTML,CSS,JAVASCRIPT</h3>
+            <p>Sir Syed University</p>
+            <p></p>
+        </div> -->
+    </section>
+    <section id="experience" class="experience">
+        <h2 style="font-size: 23px;">Experience</h2>
+        <div class="experience-card">
+            <h3>Frontend Developer</h3>
+            <p>Worked on developing responsive user interfaces.</p>
+        </div>
+        <div class="experience-card">
+            <h3>Backend Developer</h3>
+            <p>Built robust server-side applications and APIs.</p>
+        </div>
+        <div class="experience-card">
+            <h3>Full Stack Developer</h3>
+            <p>Handled end-to-end development of web projects.</p>
+        </div>
+    </section>
+    <div class="contact-section">
+        <h2 style="font-size: 23px;">Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
